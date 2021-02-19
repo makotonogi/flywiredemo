@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <title>Hilton Test</title>
+  <title>Flywire Testing Env</title>
 
   <style>
     .bd-placeholder-img {
@@ -130,62 +130,8 @@
     </div>
 
     <div class="form-label-group">
-      <select id="resort" class="form-control" placeholder="Resort">
-        <option value="HFO">48th Street Vacation Owners Association (HFO)</option>
-        <option value="HFS">57th St. Vacation Owners Association (HFS)</option>
-        <option value="HAO">AOC Vacation Owners Association (HAO)</option>
-        <option value="HAA">Association of Apartment Owners of the Bay Club at Waikoloa Beach Resort (HAA)</option>
-        <option value="HBW">BW Vacation Owners Association, Inc (HBW)</option>
-        <option value="FGH">Casa Ybel Beach &amp; Racquet Club Phase FGH Condominium Association (FGH)</option>
-        <option value="IJK">Casa Ybel Beach &amp; Racquet Club Phase IJK Condominium Association (IJK)</option>
-        <option value="HCP">Central Park Owners Association, Inc (HCP)</option>
-        <option value="HMA">Charter Club of Marco Beach Condominium Association (HMA)</option>
-        <option value="HMI">Club Regency of Marco Island Condominium Association (HMI)</option>
-        <option value="HEG">Eagle's Nest on Marco Beach Condominium Association (HEG)</option>
-        <option value="HRC">FHRC Suites Owners Association (HRC)</option>
-        <option value="HGI">GI Vacation Owners Association (HGI)</option>
-        <option value="HGW">GW Vacation Owners Association (HGW)</option>
-        <option value="HHV">Harbourview Villas at South Seas Resort Condominium Association (HHV)</option>
-        <option value="HHS">HC Suites Owners Association (HHS)</option>
-        <option value="HNC">HNY Club Suites Owners Association (HNC)</option>
-        <option value="HLV">HTLV Vacation Owners Association (HLV)</option>
-        <option value="HHH">Hurricane House Condominium Association (HHH)</option>
-        <option value="HVV">HVVS Owners Association (HVV)</option>
-        <option value="HKO">Kohala Coast Vacation Owners Association (HKO)</option>
-        <option value="HKT">KT Vacation Owners Association (HKT)</option>
-        <option value="HVB">Las Vegas Boulevard Vacation Suites Owners Association (HVB)</option>
-        <option value="HVS">Las Vegas Vacation Suites Owners Association (HVS)</option>
-        <option value="HIB">Liberty Place Owners Association, Inc (HIB)</option>
-        <option value="HLP">LP Vacation Suites Owners Association (HLP)</option>
-        <option value="HVT">LV Tower 52 Condominium Owners Association (HVT)</option>
-        <option value="MBV">Maui Bay Villas Owners Association, Inc  (MBV)</option>
-        <option value="HMB">MBV Vacation Owners Association (HMB)</option>
-        <option value="MMO">MM Owners Association, Inc  (MMO)</option>
-        <option value="HVO">Ocean 22 Vacation Owners Association (HVO)</option>
-        <option value="HTW">Ocean Tower Vacation Owners Association (HTW)</option>
-        <option value="HLO">OE Vacation Suites, Inc. (HLO)</option>
-        <option value="OVS">Orlando Vacation Suites 43 (OVS)</option>
-        <option value="HOV">Orlando Vacation Suites II Condominium Association (HOV)</option>
-        <option value="HSO">Parc Soleil Vacation Owners Association (HSO)</option>
-        <option value="HPB">Plantation Bay Villas Owners Association (HPB)</option>
-        <option value="HBC">Plantation Beach Club Condominium Association (IRP) (HBC)</option>
-        <option value="HPI">Plantation Beach Club II Owners Association (HPI)</option>
-        <option value="HII">Plantation Beach Club III Owners Association (HII)</option>
-        <option value="HPC">Plantation Beach Club Owners Association, Inc (HPC)</option>
-        <option value="HPH">Plantation House Condominium Association (HPH)</option>
-        <option value="HSW">Seawatch On The Beach Condominium Association (HSW)</option>
-        <option value="HSV">South Beach Vacation Suites Condominium Association (HSV)</option>
-        <option value="HSL">Sunrise Lodge Timeshare Owners Association (HSL)</option>
-        <option value="HTD">TD Owners Association (HTD)</option>
-        <option value="HBY">The Bay Club Vacation Owners Association (HBY)</option>
-        <option value="HSP">The Cottages at South Seas Plantation Condominium Association (HSP)</option>
-        <option value="HSB">The Sanibel Cottages Condominium Owners Association (HSB)</option>
-        <option value="HSH">The South Seas Club Condominium Association (HSH)</option>
-        <option value="HSM">The Surf Club of Marco (HSM)</option>
-        <option value="HTB">Tortuga Beach Club Condominium Association (HTB)</option>
-        <option value="HTV">Tuscany Village Vacation Suites Owners Association (HTV)</option>
-        <option value="HVL">Valdoro Mountain Lodge Owner's Association (HVL)</option>
-        <option value="HWB">WBKL Vacation Owners Association (HWB)</option>
+      <select id="resort" class="form-control" placeholder="Account">
+        <option value="BOJ">Beauty of Japan</option>
       </select>
       <label for="resort">Resort</label>
     </div>
@@ -236,7 +182,7 @@
     function pay() {
 
       var config = {
-        env: "prod",
+        env: "demo",
         recipientCode: document.getElementById("resort").value,
         amount: document.getElementById("amount").value,
 
