@@ -1,1 +1,185 @@
+<html lang="en" class="macos desktop portrait"><head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>After Payment</title>
+  
+  <div>
+    How was your payment?
+  </div>
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #f5f5f5;
+    }
+
+    .form-signin {
+      width: 100%;
+      max-width: 420px;
+      padding: 15px;
+      margin: auto;
+    }
+
+    .form-label-group {
+      position: relative;
+      margin-bottom: 1rem;
+    }
+
+    .form-label-group>input,
+    .form-label-group>select,
+    .form-label-group>label {
+      height: 3.125rem;
+      padding: .75rem;
+    }
+
+    .form-label-group>label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      margin-bottom: 0;
+      line-height: 1.5;
+      color: #495057;
+      pointer-events: none;
+      cursor: text;
+      border: 1px solid transparent;
+      border-radius: .25rem;
+      transition: all .1s ease-in-out;
+    }
+
+    .mb-3>label {
+      left: 32px;
+    }
+
+    .form-label-group input::-webkit-input-placeholder,
+    .form-label-group select::-webkit-input-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input:-ms-input-placeholder,
+    .form-label-group select:-ms-input-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input::-ms-input-placeholder,
+    .form-label-group select::-ms-input-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input::-moz-placeholder,
+    .form-label-group select::-moz-placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input::placeholder,
+    .form-label-group select::placeholder {
+      color: transparent;
+    }
+
+    .form-label-group input:not(:placeholder-shown),
+    .form-label-group select:not(:placeholder-shown) {
+      padding-top: 1.25rem;
+      padding-bottom: .25rem;
+    }
+
+    .form-label-group input:not(:placeholder-shown)~label,
+    .form-label-group select:not(:placeholder-shown)~label {
+      padding-top: .25rem;
+      padding-bottom: .25rem;
+      font-size: 12px;
+      color: #777;
+    }
+
+    h1>small {
+      display: block;
+    }
+
+  </style>
+</head>
+
+<body style="">
+  <form class="form-signin">
+    <div class="text-center mb-4">
+      <img class="fw mb-4" src="https://theme.zdassets.com/theme_assets/1020237/5e4c4dd910317969b7e63e4aa862c4a169b215bf.svg" height="75">
+      <h1 class="h3 mb-3 font-weight-normal">Flywire Testing Environment</h1>
+    </div>
+
+    <div class="form-label-group">
+      <select id="resort" class="form-control" placeholder="Account">
+        <option value="BOJ">Beauty of Japan</option>
+      </select>
+      <label for="resort">Resort</label>
+    </div>
+
+    <div class="input-group mb-3 form-label-group">
+      <div class="input-group-prepend">
+        <span class="input-group-text">$</span>
+      </div>
+      <input id="amount" type="number" value="1200" class="form-control" aria-label="Amount (to the nearest dollar)">
+      <label for="amount">Amount</label>
+      <div class="input-group-append">
+        <span class="input-group-text">.00</span>
+      </div>
+    </div>
+
+    <div class="form-label-group">
+      <input type="text" id="countryCode" value="JP" class="form-control" placeholder="Country Code" required="" autofocus="">
+      <label for="countryCode">Country Code</label>
+    </div>
+
+    <div class="form-label-group">
+      <select id="lang" class="form-control" placeholder="Language">
+        <option value="en" selected="">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="id">Indonesia</option>
+        <option value="ja">Japanese</option>
+        <option value="ko">Korean</option>
+        <option value="pt">Portuguese</option>
+        <option value="vi">Vietnamese</option>
+        <option value="zh">Chinese</option>
+      </select>
+      <label for="lang">Language</label>
+    </div>
+
+    <a id="pay" class="btn btn-lg btn-primary btn-block" onclick="pay()">Pay</a>
+
+    <p class="mt-5 mb-3 text-muted text-center">© 2020</p>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  
+</body></html>
 
